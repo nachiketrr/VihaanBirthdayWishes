@@ -125,6 +125,7 @@ $('document').ready(function(){
 	});	
 
 	$('#cake_fadein').click(function(){
+		document.getElementById("vihaan").style.display = "none";
 		$('.cake').fadeIn('slow');
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#light_candle').fadeIn('slow');
